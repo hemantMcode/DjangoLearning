@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>HEMANT WEBSITE</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "main.css" %}">
+
+</head>
+<body>
+    <h1> This is the first page</h1>
+    <h3>how awsome??</h3>
+    <li>views.py</li>
+    <li>templates</li>
+    <li>settings.py</li><br>
+      <a href="{% url "about" %}">CLICK to go to ABOUT >>> </a>
+      <br>
+        <a href="{% url "result" %}">CLICK to go to RESULT >>></a>
+        <br><br>
+        <button onclick="buttonFunc()">click me to change color</button>
+        <script type="text/javascript" src = "{% static "main.js" %}"></script>
+        <br><br>
+        <img src="{% static "book.png"%}"></img>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my froms page </title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <a href="{% url 'result' %}" >click here </a>
+
+    <form action="{% url 'result'%}">
+      {% csrf_token %}
+      <input type="text" name="user_input">
+      <input type="submit" value="click me">
+    </form>
+
+  </body>
+</html>

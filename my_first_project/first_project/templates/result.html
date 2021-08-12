@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Result page </title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+    <a href='{% url "home" %}'><b>click to go home</b></a>
+
+    <form action='{% url "about" %}'>
+      {% csrf_token %}
+      <input type="text" name="user_input">
+      <input type="submit" value="click me">
+    </form>
+
+  </body>
+</html>
